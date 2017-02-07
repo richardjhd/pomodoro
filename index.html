@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app/funcoes.js"></script>
 </head>
 
 <body>
@@ -28,15 +29,15 @@
 
     <div class="jumbotron">
         <div class="container text-center">
-            <h1 class="cronometro">00:00</h1>
-            <p>Pomodoros: 0 | Pausas Curtas: 0 | Pausas Longas: 0</p>
+            <h1 class="cronometro" id="cronometro">00:00</h1>
+            <p class="textoContador" id="textoContador">Pomodoros: 0 | Pausas Curtas: 0 | Pausas Longas: 0</p>
         </div>
     </div>
 
     <div class="container text-center">
-        <button type="button" class="btn btn-lg btn-primary">Começar</button>&nbsp;&nbsp;
-        <button type="button" class="btn btn-lg btn-warning">Parar</button>&nbsp;&nbsp;
-        <button type="button" class="btn btn-lg btn-danger">Reiniciar</button>
+        <button type="button" class="btn btn-lg btn-primary" id="btnIniciar" onclick="iniciarCronometro(tempoPomodoro)">Iniciar</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-lg btn-warning" id="btnParar">Parar</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-lg btn-danger" id="btnReiniciar">Reiniciar</button>
     </div>
 
     <br /><br />
