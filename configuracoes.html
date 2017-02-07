@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Pomodoro - Configurações</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Pomodoro</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="configuracoes.html"><span class="glyphicon glyphicon-cog"></span> Configurações</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Configurações</h1>
+            <p>Determine o tempo de cada pomodoro e pausas em minutos:</p>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputPomodoro" class="col-sm-4 control-label">Pomodoro</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputPomodoro" placeholder="25">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPausaCurta" class="col-sm-4 control-label">Pausa Curta</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputPausaCurta" placeholder="5">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPausaLonga" class="col-sm-4 control-label">Pausa Longa</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputPausaLonga" placeholder="15">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-4 col-sm-4">
+                    <button type="submit" class="btn btn-default">Salvar Configurações</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <br /><br />
+
+    <footer class="container-fluid text-center">
+        <p>Pomodoro</p>
+    </footer>
+
+</body>
+
+</html>
