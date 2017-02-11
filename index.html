@@ -6,10 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="app/funcoes.js"></script>
+    <script src="Pomodoro.js"></script>
+    <script language="JavaScript">
+        var pomodoro = new Pomodoro();
+    </script>
 </head>
 
 <body>
@@ -17,27 +20,22 @@
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Pomodoro</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="configuracoes.html"><span class="glyphicon glyphicon-cog"></span> Configurações</a></li>
-                </ul>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-time"></span> Pomodoro</a>
             </div>
         </div>
     </nav>
 
     <div class="jumbotron">
         <div class="container text-center">
-            <h1 class="cronometro" id="cronometro">00:00</h1>
-            <p class="textoContador" id="textoContador">Pomodoros: 0 | Pausas Curtas: 0 | Pausas Longas: 0</p>
+            <h1 class="textoTimer" id="textoTimer">25:00</h1>
+            <p class="textoContagem" id="textoContagem">Pomodoros: <strong>0</strong> | Pausas Curtas: <strong>0</strong> | Pausas Longas: <strong>0</strong></p>
         </div>
     </div>
 
     <div class="container text-center">
-        <button type="button" class="btn btn-lg btn-primary" id="btnIniciar" onclick="iniciarCronometro(tempoPomodoro)">Iniciar</button>&nbsp;&nbsp;
-        <button type="button" class="btn btn-lg btn-warning" id="btnParar">Parar</button>&nbsp;&nbsp;
-        <button type="button" class="btn btn-lg btn-danger" id="btnReiniciar">Reiniciar</button>
+        <button type="button" class="btn btn-lg btn-primary" id="btnIniciar" onclick="pomodoro.iniciar()">Iniciar</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-lg btn-warning" id="btnParar" onclick="pomodoro.parar()" disabled>Parar</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-lg btn-danger" id="btnReiniciar" onclick="pomodoro.reiniciar()" disabled="">Reiniciar</button>
     </div>
 
     <br /><br />

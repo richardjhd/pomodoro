@@ -1,0 +1,17 @@
+/*
+* Pomodoro CSS Style
+*/
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+h1.textoTimer {
+  font-size: 150px;
+}
