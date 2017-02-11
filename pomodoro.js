@@ -52,7 +52,7 @@ function Pomodoro() {
     function timer() {
         if (tempoTimer >= 0) {
             this.textoTimer.innerHTML = formataTimer(tempoTimer);
-            ciclo = setTimeout(function() { timer() }, 10);
+            ciclo = setTimeout(function() { timer() }, 1000);
             tempoTimer--;
         } else if (tempoTimer < 0) {
             audio.play();
